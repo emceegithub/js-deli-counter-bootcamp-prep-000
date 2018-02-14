@@ -22,3 +22,14 @@ function nowServing(array) {
   array.shift()
   return message
 }
+
+function nowServing(array) {
+  if (array.length == 0) {
+    return "There is nobody waiting to be served!"
+  } else {
+    var message = "Currently serving "
+    message = message + array[0] + "."
+    array.shift()
+    return message
+  }
+}
