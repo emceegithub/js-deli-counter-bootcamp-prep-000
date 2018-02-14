@@ -16,3 +16,9 @@ function currentLine(array) {
   }
 }
 
+function nowServing(array) {
+  var message = "Currently serving "
+  message = message + array[0] + "."
+  array.shift()
+  return message
+}
