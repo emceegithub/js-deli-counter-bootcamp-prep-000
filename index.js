@@ -5,9 +5,13 @@ function takeANumber(array, name) {
 }
 
 function currentLine(array) {
-  var message = "The line is currently: "
-  for (var i=0;i<array.length;i++) {
-    message = message + (parseInt([i]) + 1) + ". " + array[i] + ", "
+  if (array.length === 0) {
+    return "The line is currently empty."
+  } else {
+    var message = "The line is currently: "
+    for (var i=0;i<array.length;i++) {
+      message = message + (parseInt([i]) + 1) + ". " + array[i] + ", "
+    }
+    return message.substring(0,message.length-2)
   }
-  return message.substring(0,message.length-2)
 }
