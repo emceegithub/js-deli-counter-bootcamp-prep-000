@@ -15,3 +15,4 @@ function currentLine(array) {
     return message.substring(0,message.length-2)
   }
 }
+
